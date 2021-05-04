@@ -178,7 +178,7 @@ function simple_imageview() {
     $pic.Add_MouseDown({
         # 押下されたボタンの種類を判断する
         switch ($_.Button) {
-            "Right" {   # ここは決して呼ばれない
+            "Right" {
                 Write-Host "Button: Right"
 
                 # 前のファイルへ移動する処理
@@ -190,7 +190,7 @@ function simple_imageview() {
                 # イメージオブジェクト取得処理
                 $this.Image = get_image
             }
-            "Left" {    # 現時点ではマウスのクリックでここが呼ばれる
+            "Left" {
                 Write-Host "Button: Left"
 
                 # 次のファイルへ移動する処理
@@ -203,7 +203,7 @@ function simple_imageview() {
                 # イメージオブジェクト取得処理
                 $this.Image = get_image
             }
-            "Middle" {   # ここは決して呼ばれない
+            "Middle" {
                 Write-Host "Button: Middle"
 
                 throw $_

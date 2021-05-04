@@ -174,7 +174,6 @@ function simple_imageview() {
         $this.Image = get_image
     })
 
-    # 方向キー操作時の処理が想定されているはずだが、マウス操作時の処理(MouseDown)が実装されているように見える
     $pic.Add_MouseDown({
         # 押下されたボタンの種類を判断する
         switch ($_.Button) {
